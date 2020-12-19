@@ -1,20 +1,15 @@
 #!/bin/bash
-function play_lofi {
+function play {
     sleep 2
-    ./sp open spotify:playlist:0vvXsWCC9xrXsKd4FyS8kM
-}
-
-function play_shrek {
-    sleep 2
-    ./sp open spotify:playlist:7Jqew1g09lIKyDYCEOgzQs
+    ./sp open $1
 }
 
 if [ $1 = lofi  ]
 then
-    spotify & code . & play_lofi
+    spotify & code . & play "spotify:playlist:0vvXsWCC9xrXsKd4FyS8kM"
 elif [ $1 = shrek ]
 then
-    spotify & code . & play_shrek
+    spotify & code . & play "spotify:playlist:0vvXsWCC9xrXsKd4FyS8kM"
 elif [ $1 = asmr ]
 then
     echo "Which asmrtist (fast/sara/scout/random): "
