@@ -14,5 +14,5 @@ elif [ $1 = yt ]
 then
     echo "Search what?:"
     read query
-    chromium https://www.youtube.com/results?search_query=$query
+    nohup chromium https://www.youtube.com/results?search_query=$query </dev/null >/dev/null 2>&1 &
 fi
