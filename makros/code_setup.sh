@@ -15,4 +15,5 @@ then
     echo "Search what?:"
     read query
     nohup chromium https://www.youtube.com/results?search_query=$query </dev/null >/dev/null 2>&1 &
+    code .
 fi
