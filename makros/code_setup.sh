@@ -10,9 +10,9 @@ then
 elif [ $1 = shrek ]
 then
     spotify & code . & play "spotify:playlist:0vvXsWCC9xrXsKd4FyS8kM"
-elif [ $1 = asmr ]
+elif [ $1 = yt ]
 then
-    echo "Which asmrtist (fast/sara/scout/random): "
-    read asmrtist
-    echo $asmrtist
+    echo "Search what?:"
+    read query
+    chromium https://www.youtube.com/results?search_query=$query
 fi
